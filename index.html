@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Pixel Art Editor</title>
+    <script type="module" crossorigin src="/assets/index-DXU06jSA.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Btcf34mC.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="toolbar">
+        <div class="toolbar-section">
+          <h2>PixelArt3D</h2>
+        </div>
+      </header>
+      
+      <main class="main-content">
+        <section class="panel editor-panel" id="editor-panel">
+          <div class="face-tabs" id="face-tabs">
+            <button class="active" data-face="pz">+Z (Front)</button>
+            <button data-face="nz">-Z (Back)</button>
+            <button data-face="px">+X (Right)</button>
+            <button data-face="nx">-X (Left)</button>
+            <button data-face="py">+Y (Top)</button>
+            <button data-face="ny">-Y (Bottom)</button>
+          </div>
+          <div class="canvas-container" id="editor-container">
+            <!-- 2D Canvas goes here -->
+          </div>
+        </section>
+        
+        <div class="divider" id="panel-divider"></div>
+        
+        <section class="panel preview-panel" id="preview-panel">
+          <div class="preview-header">3D View</div>
+          <div class="canvas-container" id="preview-container">
+            <!-- 3D Canvas goes here -->
+          </div>
+        </section>
+      </main>
+      
+      <footer class="status-bar">
+        <div id="status-face">Active: +Z (Front)</div>
+        <div id="status-resolution">Res: 16x16</div>
+        <div id="status-zoom">Zoom: 1x</div>
+      </footer>
+    </div>
+  </body>
+</html>
